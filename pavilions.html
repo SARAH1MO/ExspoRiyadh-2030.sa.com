@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأجنحة - إكسبو الرياض 2030</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="C:\Users\LENOVO\OneDrive\الصور\exsp111.png" alt="شعار إكسبو الرياض 2030" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">البرنامج</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pavilions.html">الأجنحة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">الموقع</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- عنوان الصفحة -->
+    <section class="page-header">
+        <div class="container">
+            <h1>أجنحة المعرض</h1>
+            <p>استكشف الأجنحة المميزة المشاركة في إكسبو الرياض 2030</p>
+        </div>
+    </section>
+
+    <!-- قسم الأجنحة -->
+    <section class="pavilions-section">
+        <div class="container">
+            <div class="pavilion-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="sustainability">الاستدامة</button>
+                <button class="filter-btn" data-filter="tech">التقنية</button>
+                <button class="filter-btn" data-filter="culture">الثقافة</button>
+                <button class="filter-btn" data-filter="energy">الطاقة</button>
+            </div>
+            
+            <div class="view-toggle mb-4">
+                <button class="view-toggle-btn active" data-view="grid">عرض الشبكة</button>
+                <button class="view-toggle-btn" data-view="table">عرض الجدول</button>
+                <button class="view-toggle-btn" data-view="map">عرض الخريطة</button>
+            </div>
+            
+            <!-- عرض الشبكة -->
+            <div id="pavilions-grid" class="row g-4">
+                <div class="col-md-4 mb-4" data-category="sustainability">
+                    <div class="pavilion-card">
+                        <div class="pavilion-img">
+                            <img src="C:\Users\LENOVO\Downloads\E62F356F-87A4-46F0-BF91-D864DC8465EA.png" alt="الجناح السعودي">
+                        </div>
+                        <div class="pavilion-content">
+                            <span class="pavilion-tag">مميز</span>
+                            <h4>الجناح السعودي</h4>
+                            <p>أكبر جناح في المعرض يعكس التراث السعودي العريق ورؤية المملكة 2030 والتطورات المستقبلية.</p>
+                            <h6>العروض الرئيسية:</h6>
+                            <ul>
+                                <li>رحلة عبر تاريخ المملكة</li>
+                                <li>تجربة الواقع الافتراضي للمشاريع المستقبلية</li>
+                                <li>معرض الفنون السعودية التقليدية والحديثة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-category="sustainability">
+                    <div class="pavilion-card">
+                        <div class="pavilion-img">
+                            <img src="C:\Users\LENOVO\Downloads\ملف برمجة\expo_riyadh_2030\image\1e0cbd0c-0802-45da-8ad3-f0fc7bc9282e.png" alt="جناح الاستدامة">
+                        </div>
+                        <div class="pavilion-content">
+                            <span class="pavilion-tag">الاستدامة</span>
+                            <h4>جناح الاستدامة</h4>
+                            <p>تصميم مبتكر ومستدام بالكامل يعرض حلول وتقنيات الاستدامة المستقبلية للعالم.</p>
+                            <h6>العروض الرئيسية:</h6>
+                            <ul>
+                                <li>تقنيات الطاقة المتجددة</li>
+                                <li>الزراعة المستدامة والأمن الغذائي</li>
+                                <li>مدن المستقبل الذكية والخضراء</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-category="tech">
+                    <div class="pavilion-card">
+                        <div class="pavilion-img">
+                            <img src="C:\Users\LENOVO\Downloads\ملف برمجة\expo_riyadh_2030\image\2F603169-B574-4885-91E1-AF873FBF9ECD.png" alt="جناح التقنية">
+                        </div>
+                        <div class="pavilion-content">
+                            <span class="pavilion-tag">التقنية</span>
+                            <h4>جناح التقنية</h4>
+                            <p>عالم من الابتكار والتقنيات المتقدمة والذكاء الاصطناعي التي ستشكل مستقبل البشرية.</p>
+                            <h6>العروض الرئيسية:</h6>
+                            <ul>
+                                <li>روبوتات متقدمة وتقنيات ذكاء اصطناعي</li>
+                                <li>تجارب واقع افتراضي ومعزز</li>
+                                <li>تكنولوجيا الطب المستقبلي</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-category="culture">
+                    <div class="pavilion-card">
+                        <div class="pavilion-img">
+                            <img src="C:\Users\LENOVO\Downloads\ملف برمجة\expo_riyadh_2030\image\e1c8e4ec-7255-4b4e-b1c9-14d8918b34bf.png" alt="جناح الثقافة والفنون">
+                        </div>
+                        <div class="pavilion-content">
+                            <span class="pavilion-tag">الثقافة</span>
+                            <h4>جناح الثقافة والفنون</h4>
+                            <p>جناح متعدد الثقافات يحتفي بالتنوع الثقافي العالمي والفنون المتنوعة من جميع أنحاء العالم.</p>
+                            <h6>العروض الرئيسية:</h6>
+                            <ul>
+                                <li>معارض فنية متجددة</li>
+                                <li>عروض موسيقية وأدائية دولية</li>
+                                <li>ورش عمل تفاعلية للفنون</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-category="energy">
+                    <div class="pavilion-card">
+                        <div class="pavilion-img">
+                            <img src="C:\Users\LENOVO\Downloads\ملف برمجة\expo_riyadh_2030\image\953D3382-5368-4255-9AD4-E9C638D1E9FB.png" alt="جناح الطاقة المتجددة">
+                        </div>
+                        <div class="pavilion-content">
+                            <span class="pavilion-tag">الطاقة</span>
+                            <h4>جناح الطاقة المتجددة</h4>
+                            <p>يستعرض أحدث تقنيات وحلول الطاقة المتجددة ودورها في تحقيق الاستدامة العالمية.</p>
+                            <h6>العروض الرئيسية:</h6>
+                            <ul>
+                                <li>نماذج لمشاريع الطاقة الشمسية وطاقة الرياح</li>
+                                <li>تقنيات تخزين الطاقة المبتكرة</li>
+                                <li>تجارب تفاعلية حول مستقبل الطاقة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-category="tech">
+                    <div class="pavilion-card">
+                        <div class="pavilion-img">
+                            <img src="C:\Users\LENOVO\Downloads\ملف برمجة\expo_riyadh_2030\image\3CC8E83F-0C88-4796-BEA8-4E5758D86EE1.png" alt="جناح الفضاء">
+                        </div>
+                        <div class="pavilion-content">
+                            <span class="pavilion-tag">التقنية</span>
+                            <h4>جناح الفضاء</h4>
+                            <p>رحلة مثيرة لاستكشاف الفضاء ومستقبل البشرية خارج كوكب الأرض وأحدث الاكتشافات الفلكية.</p>
+                            <h6>العروض الرئيسية:</h6>
+                            <ul>
+                                <li>محاكاة السفر إلى المريخ</li>
+                                <li>عرض لتقنيات الفضاء المتقدمة</li>
+                                <li>تلسكوبات متطورة لمشاهدة النجوم</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- عرض الجدول -->
+            <div id="pavilions-table" class="pavilions-table" style="display: none;">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">اسم الجناح</th>
+                                <th scope="col">التصنيف</th>
+                                <th scope="col">المساحة (م²)</th>
+                                <th scope="col">ساعات العمل</th>
+                                <th scope="col">مناسب للأطفال</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>الجناح السعودي</td>
+                                <td>مميز</td>
+                                <td>15,000</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>جناح الاستدامة</td>
+                                <td>الاستدامة</td>
+                                <td>8,500</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>جناح التقنية</td>
+                                <td>التقنية</td>
+                                <td>10,200</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>جناح الثقافة والفنون</td>
+                                <td>الثقافة</td>
+                                <td>7,800</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>جناح الطاقة المتجددة</td>
+                                <td>الطاقة</td>
+                                <td>6,500</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>جناح الفضاء</td>
+                                <td>التقنية</td>
+                                <td>9,000</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>جناح الطبيعة</td>
+                                <td>الاستدامة</td>
+                                <td>5,500</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>جناح تاريخ المملكة</td>
+                                <td>الثقافة</td>
+                                <td>8,300</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>جناح المياه العالمي</td>
+                                <td>الاستدامة</td>
+                                <td>6,200</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>جناح الطعام المستقبلي</td>
+                                <td>الابتكار</td>
+                                <td>4,800</td>
+                                <td>10:00 - 22:00</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- عرض الخريطة -->
+            <div id="pavilions-map" class="pavilions-map" style="display: none;">
+                <div class="map-container">
+                    <img src="C:\Users\LENOVO\Downloads\ملف برمجة\expo_riyadh_2030\image\IMG_6309.jpeg" class="img-fluid">
+                </div>
+                <div class="map-legend mt-4">
+                    <h4>دليل الخريطة</h4>
+                    <div class="row g-3">
+                        <div class="col-md-3 col-6">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #01a650;"></span>
+                                <span>أجنحة الاستدامة</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #00aeef;"></span>
+                                <span>أجنحة التقنية</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #f1c400;"></span>
+                                <span>أجنحة الثقافة</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #f58220;"></span>
+                                <span>أجنحة الطاقة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="mb-4">
+                <img src="C:\Users\LENOVO\OneDrive\الصور\exsp111.png" alt="شعار إكسبو الرياض 2030" height="60">
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="program.html">البرنامج</a></li>
+                <li><a href="pavilions.html">الأجنحة</a></li>
+                <li><a href="location.html">الموقع</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
+                <li><a href="#">شروط الاستخدام</a></li>
+            </ul>
+            <p>&copy; 2023-2030 إكسبو الرياض. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
